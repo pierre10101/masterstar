@@ -17,3 +17,10 @@
 # Note
 - My assumption was that the request was to create an example of the factory pattern and to allow the app to easily switch between dependendencies. I therefore did not use the IoC container to dynamically resolve dependencies. 
 - I decided to use a singleton pattern with the factory otherwise each request would effectively create a new instantiation in memory. Assumption is that the providers will stay stateless. 
+
+#setup instructions
+
+- Copy the .env.example and rename file to .env
+- Run the make setup command
+- Run the make dev command
+- if a error pops up, it should not, regarding the encryption key, generate one for your app by clicking on the botton

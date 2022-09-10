@@ -15,9 +15,11 @@ setup:
 		-w /var/www/html \
 		laravelsail/php81-composer:latest \
 		composer install --ignore-platform-reqs
+		cp .env.example ./.env
 
 .PHONY: backend-install
 backend-install:
+	$(sail) artisan key:generate
 	$(sail) composer i
 
 .PHONY: backend-setup
