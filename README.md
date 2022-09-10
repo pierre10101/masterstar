@@ -20,7 +20,6 @@
 
 #setup instructions
 
-- Copy the .env.example and rename file to .env
 - Run the make setup command
 - Run the make dev command
 - if a error pops up, it should not, regarding the encryption key, generate one for your app by clicking on the botton
