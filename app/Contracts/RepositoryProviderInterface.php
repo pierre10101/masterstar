@@ -2,37 +2,20 @@
 
 namespace App\Contracts;
 
-interface RepositoryProviderInterface {
-   /**
-    * Return the name of the repository.
-    *
-    * eg: GitHub or Local
-    *
-    * @return string
-    */
+interface RepositoryProviderInterface
+{
+    /**
+     * Return the name of the repository.
+     *
+     * @return string
+     */
 
     public function getName(): string;
 
-   /**
-    * Return the most popular PHP repositories.
-    *
-    * The return value should contain an array of repositories, formatted as follows:
-    * [
-    * [
-    * 'name' => 'laravel/laravel',
-    * 'url' => 'https://github.com/laravel/laravel',
-    * 'description' => 'A PHP framework for web artisans',
-    * 'stars' => 41946,
-    * ],
-    * [
-    * 'name' => 'symfony/symfony',
-    * 'url' => 'https://github.com/symfony/symfony',
-    * 'description' => 'The Symfony PHP framework',
-    * 'stars' => 17221,
-    * ],
-    * ]
-    *
-    * @return array
-    */
+    /**
+     * Return the most popular PHP repositories.
+     *
+     * @return array
+     */
     public function getPopularRepositories(): array;
 }

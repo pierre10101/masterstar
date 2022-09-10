@@ -6,16 +6,23 @@ use App\Contracts\RepositoryProviderInterface;
 
 class LocalProvider implements RepositoryProviderInterface
 {
-
+    /**
+     * Method to retrieving provider name
+     * 
+     * @return string
+     */
     public function getName(): string
     {
-        // Implementation is pending
         return 'local';
     }
-
+    
+    /**
+     * Method for retrieve most popular repositories
+     * 
+     * @return array
+     */
     public function getPopularRepositories(): array
     {
-        // implementation is pending
         return [
             [
                 'name' => 'masterstart/coding-tests',
