@@ -10,7 +10,7 @@ up:
 
 .PHONY: setup
 setup: 
-	    docker run --rm -u "$(id -u):$(id -g)" \
+	    docker run --rm -u "$(shell id -u):$(shell id -g)" \
 		-v $(shell pwd):/var/www/html \
 		-w /var/www/html \
 		laravelsail/php81-composer:latest \
