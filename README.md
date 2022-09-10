@@ -4,6 +4,7 @@
 - In order to get setup the installation of docker is crucial.
 - once you have all dependencies installed run the.
 - With the latest laravel installation I did run into issues with docker. The solution was to install the latest version of docker and it fixed it. 
+- To start the project first run make setup - This will install sail which is required to run the project.
 
 # Architecture
 - For the frontend instead of using Vue I decided to see how alpinejs and tailwindcss would work with simple blade templates. 
