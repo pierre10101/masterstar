@@ -6,7 +6,7 @@ down:
 
 .PHONY: up
 up:
-	watch $(sail) up -d # get services running
+	$(sail) up -d # get services running
 
 .PHONY: setup
 setup: 
