@@ -12,3 +12,6 @@
 
 # URls
 - After running a make dev successfully the app should be available at localhost
+
+# Note
+- My assumption was that the request was to create an example of the factory pattern and to allow the app to easily switch between dependendencies. I therefore did not use the IoC container to dynamically resolve dependencies. 
